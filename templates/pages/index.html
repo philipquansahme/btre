@@ -1,6 +1,9 @@
 {% extends 'base.html' %} 
 {% load static %}
 {% load humanize %}
+
+{% block title %} Welcome | {% endblock title %}
+    
 {% block content %}
 <!-- Showcase -->
 <section id="showcase" style="background: url({% static 'img/showcase.jpg' %});" >
@@ -85,7 +88,10 @@
         </div>
     </div>
 </section>
-
+<br>
+<!-- Alerts -->
+{% include 'partials/_alerts.html' %}
+<!-- End Alerts -->
 <!-- Listings -->
 <section id="listings" class="py-5">
     <div class="container">
